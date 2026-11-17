@@ -1,0 +1,78 @@
+G:\programs\Frogger\Frogger\bin\Debug\Frogger.exe.config
+G:\programs\Frogger\Frogger\bin\Debug\Frogger.exe
+G:\programs\Frogger\Frogger\bin\Debug\Frogger.pdb
+G:\programs\Frogger\Frogger\bin\Debug\BouncyCastle.Cryptography.dll
+G:\programs\Frogger\Frogger\bin\Debug\Google.Protobuf.dll
+G:\programs\Frogger\Frogger\bin\Debug\K4os.Compression.LZ4.dll
+G:\programs\Frogger\Frogger\bin\Debug\K4os.Compression.LZ4.Streams.dll
+G:\programs\Frogger\Frogger\bin\Debug\K4os.Hash.xxHash.dll
+G:\programs\Frogger\Frogger\bin\Debug\MySql.Data.dll
+G:\programs\Frogger\Frogger\bin\Debug\System.Buffers.dll
+G:\programs\Frogger\Frogger\bin\Debug\System.Configuration.ConfigurationManager.dll
+G:\programs\Frogger\Frogger\bin\Debug\System.IO.Pipelines.dll
+G:\programs\Frogger\Frogger\bin\Debug\System.Memory.dll
+G:\programs\Frogger\Frogger\bin\Debug\System.Numerics.Vectors.dll
+G:\programs\Frogger\Frogger\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+G:\programs\Frogger\Frogger\bin\Debug\System.Threading.Tasks.Extensions.dll
+G:\programs\Frogger\Frogger\bin\Debug\ZstdSharp.dll
+G:\programs\Frogger\Frogger\bin\Debug\BouncyCastle.Cryptography.xml
+G:\programs\Frogger\Frogger\bin\Debug\Google.Protobuf.pdb
+G:\programs\Frogger\Frogger\bin\Debug\Google.Protobuf.xml
+G:\programs\Frogger\Frogger\bin\Debug\K4os.Compression.LZ4.xml
+G:\programs\Frogger\Frogger\bin\Debug\K4os.Compression.LZ4.Streams.xml
+G:\programs\Frogger\Frogger\bin\Debug\K4os.Hash.xxHash.xml
+G:\programs\Frogger\Frogger\bin\Debug\MySql.Data.xml
+G:\programs\Frogger\Frogger\bin\Debug\System.Buffers.xml
+G:\programs\Frogger\Frogger\bin\Debug\System.Configuration.ConfigurationManager.xml
+G:\programs\Frogger\Frogger\bin\Debug\System.IO.Pipelines.xml
+G:\programs\Frogger\Frogger\bin\Debug\System.Memory.xml
+G:\programs\Frogger\Frogger\bin\Debug\System.Numerics.Vectors.xml
+G:\programs\Frogger\Frogger\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+G:\programs\Frogger\Frogger\bin\Debug\System.Threading.Tasks.Extensions.xml
+G:\programs\Frogger\Frogger\obj\Debug\Frogger.csproj.AssemblyReference.cache
+G:\programs\Frogger\Frogger\obj\Debug\Frogger.Form1.resources
+G:\programs\Frogger\Frogger\obj\Debug\Frogger.Properties.Resources.resources
+G:\programs\Frogger\Frogger\obj\Debug\Frogger.csproj.GenerateResource.cache
+G:\programs\Frogger\Frogger\obj\Debug\Frogger.csproj.CoreCompileInputs.cache
+G:\programs\Frogger\Frogger\obj\Debug\Frogger.csproj.Up2Date
+G:\programs\Frogger\Frogger\obj\Debug\Frogger.exe
+G:\programs\Frogger\Frogger\obj\Debug\Frogger.pdb
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\Frogger.exe.config
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\Frogger.exe
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\Frogger.pdb
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\Google.Protobuf.dll
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\MySql.Data.dll
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\System.Buffers.dll
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\System.IO.Pipelines.dll
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\System.Memory.dll
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\ZstdSharp.dll
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\Google.Protobuf.pdb
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\Google.Protobuf.xml
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\MySql.Data.xml
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\System.Buffers.xml
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\System.IO.Pipelines.xml
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\System.Memory.xml
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\obj\Debug\Frogger.csproj.AssemblyReference.cache
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\obj\Debug\Frogger.Form1.resources
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\obj\Debug\Frogger.Properties.Resources.resources
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\obj\Debug\Frogger.csproj.GenerateResource.cache
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\obj\Debug\Frogger.csproj.CoreCompileInputs.cache
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\obj\Debug\Frogger.csproj.Up2Date
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\obj\Debug\Frogger.exe
+C:\Users\ywesh\OneDrive - Queen Elizabeth Sixth Form College\Frogger\Frogger\obj\Debug\Frogger.pdb
