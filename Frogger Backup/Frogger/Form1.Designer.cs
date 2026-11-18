@@ -28,20 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.score_label = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.picFrog = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picFrog)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Frogger.Properties.Resources.New_Project__3__removebg_preview1;
-            this.pictureBox1.Location = new System.Drawing.Point(260, 604);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 39);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // score_label
             // 
@@ -51,9 +41,19 @@
             this.score_label.ForeColor = System.Drawing.Color.Red;
             this.score_label.Location = new System.Drawing.Point(108, 704);
             this.score_label.Name = "score_label";
-            this.score_label.Size = new System.Drawing.Size(44, 36);
+            this.score_label.Size = new System.Drawing.Size(34, 36);
             this.score_label.TabIndex = 1;
-            this.score_label.Text = "0 ";
+            this.score_label.Text = "0";
+            // 
+            // picFrog
+            // 
+            this.picFrog.BackColor = System.Drawing.Color.Transparent;
+            this.picFrog.Image = global::Frogger.Properties.Resources.New_Project__3__removebg_preview1;
+            this.picFrog.Location = new System.Drawing.Point(254, 603);
+            this.picFrog.Name = "picFrog";
+            this.picFrog.Size = new System.Drawing.Size(41, 41);
+            this.picFrog.TabIndex = 2;
+            this.picFrog.TabStop = false;
             // 
             // Form1
             // 
@@ -61,23 +61,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Frogger.Properties.Resources.New_Project__1_2;
             this.ClientSize = new System.Drawing.Size(600, 761);
+            this.Controls.Add(this.picFrog);
             this.Controls.Add(this.score_label);
-            this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.onKeyPress);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFrog)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label score_label;
+        private System.Windows.Forms.PictureBox picFrog;
     }
 }
 

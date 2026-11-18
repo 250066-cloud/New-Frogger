@@ -27,22 +27,17 @@ namespace Frogger
             InitializeComponent();
 
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
         void setScore()
         {
+            if (hasAdvanced)
+            {
+                score_label.Text = (maxXRowReached * 10).ToString();
 
-                score_label.Text = (maxXRowReached*10).ToString();
-
-
+            }
         }
         void setAimTarget(int direction)
         {
-            
-            Console.WriteLine("X: "+ playerPosX + "\nY: " + playerPosY + "\nMax: " + maxXRowReached + "\nadvanced: " + hasAdvanced + "\nscore: " + maxXRowReached*10);
+
             Image img = new Bitmap(Properties.Resources.New_Project__3__removebg_preview1);
             switch (direction)
             {
@@ -59,76 +54,88 @@ namespace Frogger
                     break;
 
             }
-            pictureBox1.Image = img;
+            picFrog.Image = img;
         }
         private void onKeyPress(object sender, KeyEventArgs e)
         {
 
-            if (playerPosY >= maxXRowReached)
-            {
-                maxXRowReached = playerPosY+1;
-                hasAdvanced = true;
-            }
 
-            switch (e.KeyCode) {
+            //player movement
+
+            switch (e.KeyCode)
+            {
 
                 //move up
                 case Keys.W:
-                    setScore();
-                    pictureBox1.Top -= 80;
+                    picFrog.Top -= 80;
                     playerPosY += 1;
                     setAimTarget(0);
                     break;
 
                 case Keys.Up:
-                    setScore();
-                    pictureBox1.Top -= 80;
+                    picFrog.Top -= 80;
                     playerPosY += 1;
                     setAimTarget(0);
                     break;
 
                 //move down
                 case Keys.S:
-                    pictureBox1.Top += 80;
-                    playerPosY -= 1;
-                    hasAdvanced = false;
-                    setAimTarget(180);
+                    if (playerPosY >0){
+                        picFrog.Top += 80;
+                        playerPosY -= 1;
+                        hasAdvanced = false;
+                        setAimTarget(180);
+                    }
                     break;
 
                 case Keys.Down:
-                    pictureBox1.Top += 80;
-                    playerPosY -= 1;
-                    hasAdvanced = false;
-                    setAimTarget(180);
+                    if (playerPosY > 0)
+                    {
+                        picFrog.Top += 80;
+                        playerPosY -= 1;
+                        hasAdvanced = false;
+                        setAimTarget(180);
+                    }
                     break;
 
                 //move right
                 case Keys.D:
-                    pictureBox1.Left += 80;
+                    picFrog.Left += 80;
                     playerPosX += 1;
                     setAimTarget(90);
                     break;
 
                 case Keys.Right:
-                    pictureBox1.Left += 80;
+                    picFrog.Left += 80;
                     playerPosX += 1;
                     setAimTarget(90);
                     break;
 
                 //move left
                 case Keys.A:
-                    pictureBox1.Left -= 80;
+                    picFrog.Left -= 80;
                     playerPosX -= 1;
                     setAimTarget(270);
                     break;
 
                 case Keys.Left:
-                    pictureBox1.Left -= 80;
+                    picFrog.Left -= 80;
                     playerPosX -= 1;
                     setAimTarget(270);
                     break;
             }
 
+            //setting the  max row reached
+
+            if (playerPosY > maxXRowReached)
+            {
+                hasAdvanced = true;
+                maxXRowReached = playerPosY;
+            }
+            //setting the score
+
+            setScore();
+            //Console.WriteLine("X: " + playerPosX + "\nY: " + playerPosY + "\nMax: " + maxXRowReached + "\nadvanced: " + hasAdvanced + "\nscore: " + maxXRowReached * 10);
 
         }
 
