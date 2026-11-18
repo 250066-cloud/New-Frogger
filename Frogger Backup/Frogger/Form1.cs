@@ -91,7 +91,7 @@ namespace Frogger
                 case Keys.Down:
                     if (playerPosY > 0)
                     {
-                        picFrog.Top += 80;
+                        picFrog.Top += 50;
                         playerPosY -= 1;
                         hasAdvanced = false;
                         setAimTarget(180);
@@ -100,29 +100,42 @@ namespace Frogger
 
                 //move right
                 case Keys.D:
-                    picFrog.Left += 80;
-                    playerPosX += 1;
-                    setAimTarget(90);
+                    if (playerPosX <6)
+                    {
+                        picFrog.Left += 50;
+                        playerPosX += 1;
+                        setAimTarget(90);   
+                    }
                     break;
 
+
                 case Keys.Right:
-                    picFrog.Left += 80;
-                    playerPosX += 1;
-                    setAimTarget(90);
+                    if (playerPosX < 6)
+                    {
+                        picFrog.Left += 50;
+                        playerPosX += 1;
+                        setAimTarget(90);
+                    }
                     break;
 
                 //move left
                 case Keys.A:
-                    picFrog.Left -= 80;
-                    playerPosX -= 1;
-                    setAimTarget(270);
+                    if (playerPosX > -5)
+                    {
+                        picFrog.Left -= 50;
+                        playerPosX -= 1;
+                        setAimTarget(270);
+                    }
                     break;
 
                 case Keys.Left:
-                    picFrog.Left -= 80;
-                    playerPosX -= 1;
-                    setAimTarget(270);
-                    break;
+                    if (playerPosX > -5)
+                    {
+                        picFrog.Left -= 50;
+                        playerPosX -= 1;
+                        setAimTarget(270);
+                    }
+                    break; 
             }
 
             //setting the  max row reached
@@ -135,11 +148,16 @@ namespace Frogger
             //setting the score
 
             setScore();
-            //Console.WriteLine("X: " + playerPosX + "\nY: " + playerPosY + "\nMax: " + maxXRowReached + "\nadvanced: " + hasAdvanced + "\nscore: " + maxXRowReached * 10);
+            Console.WriteLine("X: " + playerPosX + "\nY: " + playerPosY + "\nMax: " + maxXRowReached + "\nadvanced: " + hasAdvanced + "\nscore: " + maxXRowReached * 10);
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

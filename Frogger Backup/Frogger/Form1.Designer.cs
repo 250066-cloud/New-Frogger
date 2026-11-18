@@ -30,7 +30,9 @@
         {
             this.score_label = new System.Windows.Forms.Label();
             this.picFrog = new System.Windows.Forms.PictureBox();
+            this.picVehicle = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picFrog)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle)).BeginInit();
             this.SuspendLayout();
             // 
             // score_label
@@ -49,11 +51,22 @@
             // 
             this.picFrog.BackColor = System.Drawing.Color.Transparent;
             this.picFrog.Image = global::Frogger.Properties.Resources.New_Project__3__removebg_preview1;
-            this.picFrog.Location = new System.Drawing.Point(254, 603);
+            this.picFrog.Location = new System.Drawing.Point(267, 603);
             this.picFrog.Name = "picFrog";
             this.picFrog.Size = new System.Drawing.Size(41, 41);
             this.picFrog.TabIndex = 2;
             this.picFrog.TabStop = false;
+            // 
+            // picVehicle
+            // 
+            this.picVehicle.BackColor = System.Drawing.Color.Transparent;
+            this.picVehicle.Image = global::Frogger.Properties.Resources.Car___Frogger_29___11_removebg_preview11;
+            this.picVehicle.Location = new System.Drawing.Point(535, 517);
+            this.picVehicle.Name = "picVehicle";
+            this.picVehicle.Size = new System.Drawing.Size(53, 50);
+            this.picVehicle.TabIndex = 3;
+            this.picVehicle.TabStop = false;
+            this.picVehicle.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
@@ -61,6 +74,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Frogger.Properties.Resources.New_Project__1_2;
             this.ClientSize = new System.Drawing.Size(600, 761);
+            this.Controls.Add(this.picVehicle);
             this.Controls.Add(this.picFrog);
             this.Controls.Add(this.score_label);
             this.Name = "Form1";
@@ -69,6 +83,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.onKeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.picFrog)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -77,6 +92,7 @@
         #endregion
         private System.Windows.Forms.Label score_label;
         private System.Windows.Forms.PictureBox picFrog;
+        public System.Windows.Forms.PictureBox picVehicle;
     }
 }
 

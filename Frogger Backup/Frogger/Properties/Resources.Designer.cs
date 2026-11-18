@@ -63,6 +63,36 @@ namespace Frogger.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Car___Frogger_29___11_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Car_-_Frogger_29_-_11-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Car___Frogger_29___11_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("Car_-_Frogger_29_-_11-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Car___Frogger_29___11_removebg_preview11 {
+            get {
+                object obj = ResourceManager.GetObject("Car_-_Frogger_29_-_11-removebg-preview11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images__4_ {
             get {
                 object obj = ResourceManager.GetObject("images (4)", resourceCulture);

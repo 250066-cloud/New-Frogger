@@ -144,5 +144,14 @@
   <ItemGroup>
     <None Include="Resources\New_Project__3_-removebg-preview1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car_-_Frogger_29_-_11-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car_-_Frogger_29_-_11-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car_-_Frogger_29_-_11-removebg-preview11.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
