@@ -92,7 +92,7 @@
             this.Controls.Add(this.score_label);
             this.Name = "Form1";
             this.ShowIcon = false;
-            this.Text = "Form1";
+            this.Text = "ww";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.onKeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.picFrog)).EndInit();
