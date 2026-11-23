@@ -50,7 +50,7 @@ namespace Frogger
 
                 picVehicle.Left -= 30;
                 vehiclePosX -= 1;
-                Console.WriteLine("Vehicle X Pos: " + vehiclePosX);
+               // Console.WriteLine("Vehicle X Pos: " + vehiclePosX);
             }
 
 
@@ -97,13 +97,13 @@ namespace Frogger
 
                 //move up
                 case Keys.W:
-                    picFrog.Top -= 50; 
+                    picFrog.Top -= picFrog.Width; 
                     playerPosY += 1;
                     setAimTarget(0);
                     break;
 
                 case Keys.Up:
-                    picFrog.Top -= 50;
+                    picFrog.Top -= picFrog.Width;
                     playerPosY += 1;
                     setAimTarget(0);
                     break;
@@ -111,7 +111,7 @@ namespace Frogger
                 //move down
                 case Keys.S:
                     if (playerPosY >0){
-                        picFrog.Top += 80;
+                        picFrog.Top += picFrog.Width;
                         playerPosY -= 1;
                         hasAdvanced = false;
                         setAimTarget(180);
@@ -121,7 +121,7 @@ namespace Frogger
                 case Keys.Down:
                     if (playerPosY > 0)
                     {
-                        picFrog.Top += 50;
+                        picFrog.Top += picFrog.Width;
                         playerPosY -= 1;
                         hasAdvanced = false;
                         setAimTarget(180);
