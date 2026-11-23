@@ -7,7 +7,9 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Transactions;
 using System.Windows.Forms;
 
@@ -19,15 +21,41 @@ namespace Frogger
     {
         int playerPosX = 0;
         int playerPosY = 0;
+        int vehiclePosX = 0;
+        int vehiclePosY = 0;
         int maxXRowReached = 0;
         bool hasAdvanced = false;
-        bool isAtStartingPos = false;
+        System.Windows.Forms.Timer t = new System.Windows.Forms.Timer();
+
+
 
         public Form1()
         {
+
             InitializeComponent();
+            t.Tick += (s, e) =>
+            {
+                moveCar();
+                Thread.Sleep(1);
+            };
+            t.Start();
+
+            
+        }
+
+        private void moveCar()
+        {
+            if (vehiclePosX >= -20)
+            {
+
+                picVehicle.Left -= 30;
+                vehiclePosX -= 1;
+                Console.WriteLine("Vehicle X Pos: " + vehiclePosX);
+            }
+
 
         }
+        
         void setScore()
         {
             if (hasAdvanced)
@@ -36,6 +64,7 @@ namespace Frogger
 
             }
         }
+
         void setAimTarget(int direction)
         {
 
@@ -68,13 +97,13 @@ namespace Frogger
 
                 //move up
                 case Keys.W:
-                    picFrog.Top -= picFrog.Width; 
+                    picFrog.Top -= 50; 
                     playerPosY += 1;
                     setAimTarget(0);
                     break;
 
                 case Keys.Up:
-                    picFrog.Top -= picFrog.Width;
+                    picFrog.Top -= 50;
                     playerPosY += 1;
                     setAimTarget(0);
                     break;
@@ -92,7 +121,7 @@ namespace Frogger
                 case Keys.Down:
                     if (playerPosY > 0)
                     {
-                        picFrog.Top += picFrog.Width;
+                        picFrog.Top += 50;
                         playerPosY -= 1;
                         hasAdvanced = false;
                         setAimTarget(180);
@@ -162,5 +191,6 @@ namespace Frogger
         {
 
         }
+
     }
 }
