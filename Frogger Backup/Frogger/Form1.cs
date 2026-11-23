@@ -21,6 +21,7 @@ namespace Frogger
         int playerPosY = 0;
         int maxXRowReached = 0;
         bool hasAdvanced = false;
+        bool isAtStartingPos = false;
 
         public Form1()
         {
@@ -67,13 +68,13 @@ namespace Frogger
 
                 //move up
                 case Keys.W:
-                    picFrog.Top -= 80;
+                    picFrog.Top -= picFrog.Width; 
                     playerPosY += 1;
                     setAimTarget(0);
                     break;
 
                 case Keys.Up:
-                    picFrog.Top -= 80;
+                    picFrog.Top -= picFrog.Width;
                     playerPosY += 1;
                     setAimTarget(0);
                     break;
@@ -91,7 +92,7 @@ namespace Frogger
                 case Keys.Down:
                     if (playerPosY > 0)
                     {
-                        picFrog.Top += 50;
+                        picFrog.Top += picFrog.Width;
                         playerPosY -= 1;
                         hasAdvanced = false;
                         setAimTarget(180);
