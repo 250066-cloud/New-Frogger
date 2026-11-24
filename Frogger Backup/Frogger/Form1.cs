@@ -66,10 +66,10 @@ namespace Frogger
                 vehicle1Row1PosX -= 1;
                 Console.WriteLine("Vehicle1 X Pos: " + vehicle1Row1PosX);
             }
-            else if (vehicle1Row1PosX <= -120)
+             if (vehicle1Row1PosX <= -120)
             {
                 picVehicle1Row1.Left = 1136;
-                vehicle1Row1PosX = 0;
+                vehicle1Row1PosX = 120;
             }
             //car 2
 
@@ -79,10 +79,10 @@ namespace Frogger
                 vehicle2Row1PosX -= 1;
                 Console.WriteLine("Vehicle2 X Pos: " + vehicle2Row1PosX);
             }
-            else if (vehicle2Row1PosX <= -120)
+            if (vehicle2Row1PosX <= -120)
             {
                 picVehicle2Row1.Left = 868;
-                vehicle2Row1PosX = 0;
+                vehicle2Row1PosX = 120;
             }
 
             //car 3
@@ -93,10 +93,10 @@ namespace Frogger
                 vehicle3Row1PosX -= 1;
                 Console.WriteLine("Vehicle3 X Pos: " + vehicle3Row1PosX);
             }
-            else if (vehicle3Row1PosX <= -120)
+            if (vehicle3Row1PosX <= -120)
             {
                 picVehicle3Row1.Left = 600;
-                vehicle3Row1PosX = 0;
+                vehicle3Row1PosX = 120;
             }
 
             //car 2
