@@ -25,9 +25,13 @@ namespace Frogger
         int maxXRowReached = 0;
         bool hasAdvanced = false;
         int lives = 3;
+        //ROW 1
         //vehicle 1
-        int vehicle1PosX = 0;
+        int vehicle1Row1PosX = 0;
         //vehicle 2
+        int vehicle2Row1PosX = 0;
+        //vehicle 3
+        int vehicle3Row1PosX = 0;
         int vehicle2PosX = 0;
         //vehicle 3
         int vehicle3PosX = 0;
@@ -52,44 +56,71 @@ namespace Frogger
 
         private void moveCar()
         {;
-            //car 1
-            if (vehicle1PosX >= -20)
-            {
 
-                picVehicle.Left -= 30;
-                vehicle1PosX -= 1;
-                //Console.WriteLine("Vehicle X Pos: " + vehicle1PosX);
-            }
-            if (vehicle1PosX <= -20)
+            //ROW 1
+
+            //car 1
+            if (vehicle1Row1PosX >= -120)
             {
-                picVehicle.Left = 600;
-                vehicle1PosX = 0;
+                picVehicle1Row1.Left -= 5;
+                vehicle1Row1PosX -= 1;
+                Console.WriteLine("Vehicle1 X Pos: " + vehicle1Row1PosX);
+            }
+            else if (vehicle1Row1PosX <= -120)
+            {
+                picVehicle1Row1.Left = 1136;
+                vehicle1Row1PosX = 0;
+            }
+            //car 2
+
+            if (vehicle2Row1PosX >= -120)
+            {
+                picVehicle2Row1.Left -= 5;
+                vehicle2Row1PosX -= 1;
+                Console.WriteLine("Vehicle2 X Pos: " + vehicle2Row1PosX);
+            }
+            else if (vehicle2Row1PosX <= -120)
+            {
+                picVehicle2Row1.Left = 868;
+                vehicle2Row1PosX = 0;
+            }
+
+            //car 3
+
+            if (vehicle3Row1PosX >= -120)
+            {
+                picVehicle3Row1.Left -= 5;
+                vehicle3Row1PosX -= 1;
+                Console.WriteLine("Vehicle3 X Pos: " + vehicle3Row1PosX);
+            }
+            else if (vehicle3Row1PosX <= -120)
+            {
+                picVehicle3Row1.Left = 600;
+                vehicle3Row1PosX = 0;
             }
 
             //car 2
 
-            if (vehicle2PosX <= 20)
+            if (vehicle2PosX <= 120)
             {
-
-                picVehicle2.Left += 30;
+                picVehicle2.Left += 5;
                 vehicle2PosX += 1;
                 //Console.WriteLine("Vehicle X Pos: " + vehicle2PosX);
             }
-            if (vehicle2PosX >= 21)
+            if (vehicle2PosX >= 120)
             {
                 picVehicle2.Left = 0;
                 vehicle2PosX = 0;
             }
 
             //car 3
-            if (vehicle3PosX >= -20)
+            if (vehicle3PosX >= -120)
             {
-
-                picVehicle3.Left -= 30;
+                picVehicle3.Left -= 5;
                 vehicle3PosX -= 1;
                 //Console.WriteLine("Vehicle X Pos: " + vehicle1PosX);
             }
-            if (vehicle3PosX <= -20)
+            if (vehicle3PosX <= -120)
             {
                 picVehicle3.Left = 600;
                 vehicle3PosX = 0;
@@ -131,7 +162,7 @@ namespace Frogger
         }
         void isTouching()
         {
-            if (picFrog.Bounds.IntersectsWith(picVehicle.Bounds)|| picFrog.Bounds.IntersectsWith(picVehicle2.Bounds) || picFrog.Bounds.IntersectsWith(picVehicle3.Bounds))
+            if (picFrog.Bounds.IntersectsWith(picVehicle1Row1.Bounds)|| picFrog.Bounds.IntersectsWith(picVehicle2.Bounds) || picFrog.Bounds.IntersectsWith(picVehicle3.Bounds))
             {
                 updateLives();
                 
