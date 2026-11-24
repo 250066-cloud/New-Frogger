@@ -154,3 +154,4 @@ C:\Users\ywesh\source\repos\New-Frogger\23\11\2026\Frogger Backup\Frogger\obj\De
 C:\Users\ywesh\source\repos\New-Frogger\23\11\2026\Frogger Backup\Frogger\obj\Debug\Frogger.csproj.Up2Date
 C:\Users\ywesh\source\repos\New-Frogger\23\11\2026\Frogger Backup\Frogger\obj\Debug\Frogger.exe
 C:\Users\ywesh\source\repos\New-Frogger\23\11\2026\Frogger Backup\Frogger\obj\Debug\Frogger.pdb
+C:\Users\250066\source\repos\New-Frogger\Frogger Backup\Frogger\obj\Debug\Frogger.Form3.resources

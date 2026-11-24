@@ -83,9 +83,29 @@ namespace Frogger.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Car___Frogger_29___11_removebg_preview1___Copy {
+            get {
+                object obj = ResourceManager.GetObject("Car_-_Frogger_29_-_11-removebg-preview1 - Copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Car___Frogger_29___11_removebg_preview11 {
             get {
                 object obj = ResourceManager.GetObject("Car_-_Frogger_29_-_11-removebg-preview11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ce5195c342b2577e62fa90aea2e6a33b_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("ce5195c342b2577e62fa90aea2e6a33b-removebg-preview1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +123,29 @@ namespace Frogger.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("images-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap New_Project__1_ {
             get {
                 object obj = ResourceManager.GetObject("New Project (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap New_Project__1___1_ {
+            get {
+                object obj = ResourceManager.GetObject("New Project (1) (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +186,16 @@ namespace Frogger.Properties {
         internal static System.Drawing.Bitmap New_Project__3__removebg_preview1 {
             get {
                 object obj = ResourceManager.GetObject("New_Project__3_-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unnamed {
+            get {
+                object obj = ResourceManager.GetObject("unnamed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

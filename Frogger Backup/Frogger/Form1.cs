@@ -19,43 +19,125 @@ namespace Frogger
 
     public partial class Form1 : Form
     {
+        //player 
         int playerPosX = 0;
         int playerPosY = 0;
-        int vehiclePosX = 0;
-        int vehiclePosY = 0;
         int maxXRowReached = 0;
         bool hasAdvanced = false;
+        int lives = 3;
+        //vehicle 1
+        int vehicle1PosX = 0;
+        //vehicle 2
+        int vehicle2PosX = 0;
+        //vehicle 3
+        int vehicle3PosX = 0;
         System.Windows.Forms.Timer t = new System.Windows.Forms.Timer();
 
 
 
         public Form1()
         {
-
             InitializeComponent();
             t.Tick += (s, e) =>
             {
                 moveCar();
+                isTouching();
                 Thread.Sleep(1);
             };
             t.Start();
 
             
+            
         }
 
         private void moveCar()
-        {
-            if (vehiclePosX >= -20)
+        {;
+            //car 1
+            if (vehicle1PosX >= -20)
             {
 
                 picVehicle.Left -= 30;
-                vehiclePosX -= 1;
-                Console.WriteLine("Vehicle X Pos: " + vehiclePosX);
+                vehicle1PosX -= 1;
+                //Console.WriteLine("Vehicle X Pos: " + vehicle1PosX);
+            }
+            if (vehicle1PosX <= -20)
+            {
+                picVehicle.Left = 600;
+                vehicle1PosX = 0;
             }
 
+            //car 2
 
+            if (vehicle2PosX <= 20)
+            {
+
+                picVehicle2.Left += 30;
+                vehicle2PosX += 1;
+                //Console.WriteLine("Vehicle X Pos: " + vehicle2PosX);
+            }
+            if (vehicle2PosX >= 21)
+            {
+                picVehicle2.Left = 0;
+                vehicle2PosX = 0;
+            }
+
+            //car 3
+            if (vehicle3PosX >= -20)
+            {
+
+                picVehicle3.Left -= 30;
+                vehicle3PosX -= 1;
+                //Console.WriteLine("Vehicle X Pos: " + vehicle1PosX);
+            }
+            if (vehicle3PosX <= -20)
+            {
+                picVehicle3.Left = 600;
+                vehicle3PosX = 0;
+            }
         }
-        
+
+        void gameover()
+        {
+            labLives.Text = "GAMEOVER";
+            Form3 f3 = new Form3();
+            f3.Show();
+            this.Hide();
+        }
+
+
+
+        void updateLives()
+        {
+            if (lives>1)
+            {
+                lives -= 1;
+                labLives.Text = "LIVES "+ lives;
+                picFrog.Left = 267;
+                picFrog.Top = 603;
+                playerPosX = 0;
+                playerPosY= 0;
+                setAimTarget(0);
+            }
+            else
+            {
+                picFrog.Left = 267;
+                picFrog.Top = 603;
+                playerPosX = 0;
+                playerPosY = 0;
+                setAimTarget(0);
+                gameover();
+            }
+            
+        }
+        void isTouching()
+        {
+            if (picFrog.Bounds.IntersectsWith(picVehicle.Bounds)|| picFrog.Bounds.IntersectsWith(picVehicle2.Bounds) || picFrog.Bounds.IntersectsWith(picVehicle3.Bounds))
+            {
+                updateLives();
+                
+            }
+            
+        }
         void setScore()
         {
             if (hasAdvanced)
@@ -97,13 +179,13 @@ namespace Frogger
 
                 //move up
                 case Keys.W:
-                    picFrog.Top -= 50; 
+                    picFrog.Top -= picFrog.Width; 
                     playerPosY += 1;
                     setAimTarget(0);
                     break;
 
                 case Keys.Up:
-                    picFrog.Top -= 50;
+                    picFrog.Top -= picFrog.Width;
                     playerPosY += 1;
                     setAimTarget(0);
                     break;
@@ -111,7 +193,7 @@ namespace Frogger
                 //move down
                 case Keys.S:
                     if (playerPosY >0){
-                        picFrog.Top += 80;
+                        picFrog.Top += picFrog.Width;
                         playerPosY -= 1;
                         hasAdvanced = false;
                         setAimTarget(180);
@@ -121,7 +203,7 @@ namespace Frogger
                 case Keys.Down:
                     if (playerPosY > 0)
                     {
-                        picFrog.Top += 50;
+                        picFrog.Top += picFrog.Width;
                         playerPosY -= 1;
                         hasAdvanced = false;
                         setAimTarget(180);
@@ -178,7 +260,7 @@ namespace Frogger
             //setting the score
 
             setScore();
-            Console.WriteLine("X: " + playerPosX + "\nY: " + playerPosY + "\nMax: " + maxXRowReached + "\nadvanced: " + hasAdvanced + "\nscore: " + maxXRowReached * 10);
+            //Console.WriteLine("X: " + playerPosX + "\nY: " + playerPosY + "\nMax: " + maxXRowReached + "\nadvanced: " + hasAdvanced + "\nscore: " + maxXRowReached * 10);
 
         }
 
@@ -191,6 +273,5 @@ namespace Frogger
         {
 
         }
-
     }
 }
