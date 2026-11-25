@@ -63,7 +63,7 @@ namespace Frogger
             //ROW 1
 
             //car 1
-            if (vehicle1Row1PosX >= -120)
+            //if (vehicle1Row1PosX >= -120)
             {
                 picVehicle1Row1.Left -= 5;
                 vehicle1Row1PosX -= 1;
@@ -76,7 +76,7 @@ namespace Frogger
             }
             //car 2
 
-            if (vehicle2Row1PosX >= -120)
+            //if (vehicle2Row1PosX >= -120)
             {
                 picVehicle2Row1.Left -= 5;
                 vehicle2Row1PosX -= 1;
@@ -90,7 +90,7 @@ namespace Frogger
 
             //car 3
 
-            if (vehicle3Row1PosX >= -120)
+            //if (vehicle3Row1PosX >= -120)
             {
                 picVehicle3Row1.Left -= 5;
                 vehicle3Row1PosX -= 1;
@@ -104,7 +104,7 @@ namespace Frogger
 
             //car 4
 
-            if (vehicle4Row1PosX >= -120)
+            //if (vehicle4Row1PosX >= -120)
             {
                 picVehicle4Row1.Left -= 5;
                 vehicle4Row1PosX -= 1;
@@ -160,6 +160,8 @@ namespace Frogger
         {
             if (lives>1)
             {
+
+                //reset player's position
                 lives -= 1;
                 labLives.Text = "LIVES "+ lives;
                 picFrog.Left = 267;
@@ -167,15 +169,36 @@ namespace Frogger
                 playerPosX = 0;
                 playerPosY= 0;
                 setAimTarget(0);
+
+                //reset row 1 vehicle's position
+                picVehicle1Row1.Left = 535;
+                vehicle1Row1PosX = 0;
+
+                picVehicle2Row1.Left = 354;
+                vehicle2Row1PosX = 0;
+
+                picVehicle3Row1.Left = 174;
+                vehicle3Row1PosX = 0;
+
+                picVehicle4Row1.Left = 12;
+                vehicle4Row1PosX = 0;
+
+
+                Console.Beep();
             }
             else
             {
+                for (int i = 0; i < 3; i++)
+                {
+                    Console.Beep();
+                }
                 picFrog.Left = 267;
                 picFrog.Top = 603;
                 playerPosX = 0;
                 playerPosY = 0;
                 setAimTarget(0);
                 gameover();
+
             }
             
         }
