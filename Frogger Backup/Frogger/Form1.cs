@@ -20,6 +20,7 @@ namespace Frogger
     public partial class Form1 : Form
     {
         //player 
+        string next = "Leave";
         int playerPosX = 0;
         int playerPosY = 0;
         int maxXRowReached = 0;
@@ -32,6 +33,8 @@ namespace Frogger
         int vehicle2Row1PosX = 0;
         //vehicle 3
         int vehicle3Row1PosX = 0;
+        //vehicle 4
+        int vehicle4Row1PosX = 0;
         int vehicle2PosX = 0;
         //vehicle 3
         int vehicle3PosX = 0;
@@ -81,7 +84,7 @@ namespace Frogger
             }
             if (vehicle2Row1PosX <= -120)
             {
-                picVehicle2Row1.Left = 868;
+                picVehicle2Row1.Left = 781;
                 vehicle2Row1PosX = 120;
             }
 
@@ -95,8 +98,22 @@ namespace Frogger
             }
             if (vehicle3Row1PosX <= -120)
             {
-                picVehicle3Row1.Left = 600;
+                picVehicle3Row1.Left = 961;
                 vehicle3Row1PosX = 120;
+            }
+
+            //car 4
+
+            if (vehicle4Row1PosX >= -120)
+            {
+                picVehicle4Row1.Left -= 5;
+                vehicle4Row1PosX -= 1;
+                Console.WriteLine("Vehicle3 X Pos: " + vehicle4Row1PosX);
+            }
+            if (vehicle4Row1PosX <= -120)
+            {
+                picVehicle4Row1.Left = 600;
+                vehicle4Row1PosX = 120;
             }
 
             //car 2
@@ -130,12 +147,14 @@ namespace Frogger
         void gameover()
         {
             labLives.Text = "GAMEOVER";
-            Form3 f3 = new Form3();
-            f3.Show();
-            this.Hide();
+            next = "MainMenu";
+            Close();
         }
 
-
+        public string getNext()
+        {
+            return next;
+        }
 
         void updateLives()
         {
@@ -162,7 +181,7 @@ namespace Frogger
         }
         void isTouching()
         {
-            if (picFrog.Bounds.IntersectsWith(picVehicle1Row1.Bounds)|| picFrog.Bounds.IntersectsWith(picVehicle2.Bounds) || picFrog.Bounds.IntersectsWith(picVehicle3.Bounds))
+            if (picFrog.Bounds.IntersectsWith(picVehicle1Row1.Bounds)|| picFrog.Bounds.IntersectsWith(picVehicle2Row1.Bounds) || picFrog.Bounds.IntersectsWith(picVehicle3Row1.Bounds) || picFrog.Bounds.IntersectsWith(picVehicle4Row1.Bounds) || picFrog.Bounds.IntersectsWith(picVehicle2.Bounds) || picFrog.Bounds.IntersectsWith(picVehicle3.Bounds))
             {
                 updateLives();
                 

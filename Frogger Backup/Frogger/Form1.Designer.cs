@@ -34,12 +34,14 @@
             this.picVehicle2 = new System.Windows.Forms.PictureBox();
             this.picVehicle3 = new System.Windows.Forms.PictureBox();
             this.labLives = new System.Windows.Forms.Label();
+            this.picVehicle4Row1 = new System.Windows.Forms.PictureBox();
             this.picVehicle3Row1 = new System.Windows.Forms.PictureBox();
             this.picVehicle2Row1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picFrog)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle1Row1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle4Row1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle3Row1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle2Row1)).BeginInit();
             this.SuspendLayout();
@@ -109,24 +111,34 @@
             this.labLives.TabIndex = 6;
             this.labLives.Text = "LIVES 3";
             // 
+            // picVehicle4Row1
+            // 
+            this.picVehicle4Row1.BackColor = System.Drawing.Color.Transparent;
+            this.picVehicle4Row1.Image = global::Frogger.Properties.Resources.Car___Frogger_29___11_removebg_preview11;
+            this.picVehicle4Row1.Location = new System.Drawing.Point(12, 531);
+            this.picVehicle4Row1.Name = "picVehicle4Row1";
+            this.picVehicle4Row1.Size = new System.Drawing.Size(53, 50);
+            this.picVehicle4Row1.TabIndex = 7;
+            this.picVehicle4Row1.TabStop = false;
+            // 
             // picVehicle3Row1
             // 
-            this.picVehicle3Row1.BackColor = System.Drawing.Color.Transparent;
+            this.picVehicle3Row1.BackColor = System.Drawing.Color.IndianRed;
             this.picVehicle3Row1.Image = global::Frogger.Properties.Resources.Car___Frogger_29___11_removebg_preview11;
-            this.picVehicle3Row1.Location = new System.Drawing.Point(12, 531);
+            this.picVehicle3Row1.Location = new System.Drawing.Point(174, 531);
             this.picVehicle3Row1.Name = "picVehicle3Row1";
             this.picVehicle3Row1.Size = new System.Drawing.Size(53, 50);
-            this.picVehicle3Row1.TabIndex = 7;
+            this.picVehicle3Row1.TabIndex = 8;
             this.picVehicle3Row1.TabStop = false;
             // 
             // picVehicle2Row1
             // 
-            this.picVehicle2Row1.BackColor = System.Drawing.Color.IndianRed;
+            this.picVehicle2Row1.BackColor = System.Drawing.Color.Lime;
             this.picVehicle2Row1.Image = global::Frogger.Properties.Resources.Car___Frogger_29___11_removebg_preview11;
-            this.picVehicle2Row1.Location = new System.Drawing.Point(267, 531);
+            this.picVehicle2Row1.Location = new System.Drawing.Point(354, 531);
             this.picVehicle2Row1.Name = "picVehicle2Row1";
             this.picVehicle2Row1.Size = new System.Drawing.Size(53, 50);
-            this.picVehicle2Row1.TabIndex = 8;
+            this.picVehicle2Row1.TabIndex = 9;
             this.picVehicle2Row1.TabStop = false;
             // 
             // Form1
@@ -137,6 +149,7 @@
             this.ClientSize = new System.Drawing.Size(600, 761);
             this.Controls.Add(this.picVehicle2Row1);
             this.Controls.Add(this.picVehicle3Row1);
+            this.Controls.Add(this.picVehicle4Row1);
             this.Controls.Add(this.labLives);
             this.Controls.Add(this.picVehicle3);
             this.Controls.Add(this.picVehicle2);
@@ -152,6 +165,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle1Row1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle4Row1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle3Row1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle2Row1)).EndInit();
             this.ResumeLayout(false);
@@ -166,6 +180,7 @@
         public System.Windows.Forms.PictureBox picVehicle2;
         public System.Windows.Forms.PictureBox picVehicle3;
         private System.Windows.Forms.Label labLives;
+        public System.Windows.Forms.PictureBox picVehicle4Row1;
         public System.Windows.Forms.PictureBox picVehicle3Row1;
         public System.Windows.Forms.PictureBox picVehicle2Row1;
     }

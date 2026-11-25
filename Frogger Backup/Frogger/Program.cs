@@ -17,7 +17,27 @@ namespace Frogger
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            string next = "Game";
+            Form1 game;
+            Form3 mainMenu;
+            while (next != "Leave")
+            {
+                switch (next)
+                {
+                    case "Game":
+                        game = new Form1();
+                        Application.Run(game);
+                        next = game.getNext();
+                        break;
+                    case "MainMenu":
+                        mainMenu = new Form3();
+                        Application.Run(mainMenu);
+                        next = mainMenu.getNext();
+                        break;
+
+
+                }
+            }
 
         }
     }
