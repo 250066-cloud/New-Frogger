@@ -28,22 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.score_label = new System.Windows.Forms.Label();
             this.picFrog = new System.Windows.Forms.PictureBox();
             this.picVehicle1Row1 = new System.Windows.Forms.PictureBox();
-            this.picVehicle2 = new System.Windows.Forms.PictureBox();
-            this.picVehicle3 = new System.Windows.Forms.PictureBox();
+            this.picVehicle1Row2 = new System.Windows.Forms.PictureBox();
+            this.picVehicle1Row3 = new System.Windows.Forms.PictureBox();
             this.labLives = new System.Windows.Forms.Label();
             this.picVehicle4Row1 = new System.Windows.Forms.PictureBox();
             this.picVehicle3Row1 = new System.Windows.Forms.PictureBox();
             this.picVehicle2Row1 = new System.Windows.Forms.PictureBox();
+            this.picVehicle1Row4 = new System.Windows.Forms.PictureBox();
+            this.picVehicle2Row2 = new System.Windows.Forms.PictureBox();
+            this.picVehicle3Row2 = new System.Windows.Forms.PictureBox();
+            this.picVehicle4Row2 = new System.Windows.Forms.PictureBox();
+            this.picVehicle4Row3 = new System.Windows.Forms.PictureBox();
+            this.picVehicle3Row3 = new System.Windows.Forms.PictureBox();
+            this.picVehicle2Row3 = new System.Windows.Forms.PictureBox();
+            this.picVehicle2Row4 = new System.Windows.Forms.PictureBox();
+            this.picVehicle3Row4 = new System.Windows.Forms.PictureBox();
+            this.picVehicle4Row4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picFrog)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle1Row1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picVehicle2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picVehicle3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle1Row2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle1Row3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle4Row1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle3Row1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle2Row1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle1Row4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle2Row2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle3Row2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle4Row2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle4Row3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle3Row3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle2Row3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle2Row4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle3Row4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle4Row4)).BeginInit();
             this.SuspendLayout();
             // 
             // score_label
@@ -62,15 +83,15 @@
             // 
             this.picFrog.BackColor = System.Drawing.Color.Transparent;
             this.picFrog.Image = global::Frogger.Properties.Resources.New_Project__3__removebg_preview1;
-            this.picFrog.Location = new System.Drawing.Point(267, 603);
+            this.picFrog.Location = new System.Drawing.Point(267, 606);
             this.picFrog.Name = "picFrog";
-            this.picFrog.Size = new System.Drawing.Size(41, 41);
+            this.picFrog.Size = new System.Drawing.Size(40, 40);
             this.picFrog.TabIndex = 2;
             this.picFrog.TabStop = false;
             // 
             // picVehicle1Row1
             // 
-            this.picVehicle1Row1.BackColor = System.Drawing.Color.Blue;
+            this.picVehicle1Row1.BackColor = System.Drawing.Color.Transparent;
             this.picVehicle1Row1.Image = global::Frogger.Properties.Resources.Car___Frogger_29___11_removebg_preview11;
             this.picVehicle1Row1.Location = new System.Drawing.Point(535, 531);
             this.picVehicle1Row1.Name = "picVehicle1Row1";
@@ -79,25 +100,25 @@
             this.picVehicle1Row1.TabStop = false;
             this.picVehicle1Row1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // picVehicle2
+            // picVehicle1Row2
             // 
-            this.picVehicle2.BackColor = System.Drawing.Color.Transparent;
-            this.picVehicle2.Image = global::Frogger.Properties.Resources.ce5195c342b2577e62fa90aea2e6a33b_removebg_preview1;
-            this.picVehicle2.Location = new System.Drawing.Point(12, 458);
-            this.picVehicle2.Name = "picVehicle2";
-            this.picVehicle2.Size = new System.Drawing.Size(53, 34);
-            this.picVehicle2.TabIndex = 4;
-            this.picVehicle2.TabStop = false;
+            this.picVehicle1Row2.BackColor = System.Drawing.Color.Transparent;
+            this.picVehicle1Row2.Image = global::Frogger.Properties.Resources.ce5195c342b2577e62fa90aea2e6a33b_removebg_preview1;
+            this.picVehicle1Row2.Location = new System.Drawing.Point(12, 491);
+            this.picVehicle1Row2.Name = "picVehicle1Row2";
+            this.picVehicle1Row2.Size = new System.Drawing.Size(53, 34);
+            this.picVehicle1Row2.TabIndex = 4;
+            this.picVehicle1Row2.TabStop = false;
             // 
-            // picVehicle3
+            // picVehicle1Row3
             // 
-            this.picVehicle3.BackColor = System.Drawing.Color.Transparent;
-            this.picVehicle3.Image = global::Frogger.Properties.Resources.images_removebg_preview1;
-            this.picVehicle3.Location = new System.Drawing.Point(535, 364);
-            this.picVehicle3.Name = "picVehicle3";
-            this.picVehicle3.Size = new System.Drawing.Size(53, 45);
-            this.picVehicle3.TabIndex = 5;
-            this.picVehicle3.TabStop = false;
+            this.picVehicle1Row3.BackColor = System.Drawing.Color.Transparent;
+            this.picVehicle1Row3.Image = global::Frogger.Properties.Resources.images_removebg_preview1;
+            this.picVehicle1Row3.Location = new System.Drawing.Point(535, 444);
+            this.picVehicle1Row3.Name = "picVehicle1Row3";
+            this.picVehicle1Row3.Size = new System.Drawing.Size(53, 45);
+            this.picVehicle1Row3.TabIndex = 5;
+            this.picVehicle1Row3.TabStop = false;
             // 
             // labLives
             // 
@@ -123,7 +144,7 @@
             // 
             // picVehicle3Row1
             // 
-            this.picVehicle3Row1.BackColor = System.Drawing.Color.IndianRed;
+            this.picVehicle3Row1.BackColor = System.Drawing.Color.Transparent;
             this.picVehicle3Row1.Image = global::Frogger.Properties.Resources.Car___Frogger_29___11_removebg_preview11;
             this.picVehicle3Row1.Location = new System.Drawing.Point(174, 531);
             this.picVehicle3Row1.Name = "picVehicle3Row1";
@@ -133,7 +154,7 @@
             // 
             // picVehicle2Row1
             // 
-            this.picVehicle2Row1.BackColor = System.Drawing.Color.Lime;
+            this.picVehicle2Row1.BackColor = System.Drawing.Color.Transparent;
             this.picVehicle2Row1.Image = global::Frogger.Properties.Resources.Car___Frogger_29___11_removebg_preview11;
             this.picVehicle2Row1.Location = new System.Drawing.Point(354, 531);
             this.picVehicle2Row1.Name = "picVehicle2Row1";
@@ -141,18 +162,132 @@
             this.picVehicle2Row1.TabIndex = 9;
             this.picVehicle2Row1.TabStop = false;
             // 
+            // picVehicle1Row4
+            // 
+            this.picVehicle1Row4.BackColor = System.Drawing.Color.Transparent;
+            this.picVehicle1Row4.Image = global::Frogger.Properties.Resources.Screenshot_2026_11_26_140517_removebg_preview;
+            this.picVehicle1Row4.InitialImage = ((System.Drawing.Image)(resources.GetObject("picVehicle1Row4.InitialImage")));
+            this.picVehicle1Row4.Location = new System.Drawing.Point(12, 392);
+            this.picVehicle1Row4.Name = "picVehicle1Row4";
+            this.picVehicle1Row4.Size = new System.Drawing.Size(52, 44);
+            this.picVehicle1Row4.TabIndex = 10;
+            this.picVehicle1Row4.TabStop = false;
+            // 
+            // picVehicle2Row2
+            // 
+            this.picVehicle2Row2.BackColor = System.Drawing.Color.Transparent;
+            this.picVehicle2Row2.Image = global::Frogger.Properties.Resources.ce5195c342b2577e62fa90aea2e6a33b_removebg_preview1;
+            this.picVehicle2Row2.Location = new System.Drawing.Point(174, 491);
+            this.picVehicle2Row2.Name = "picVehicle2Row2";
+            this.picVehicle2Row2.Size = new System.Drawing.Size(53, 34);
+            this.picVehicle2Row2.TabIndex = 11;
+            this.picVehicle2Row2.TabStop = false;
+            // 
+            // picVehicle3Row2
+            // 
+            this.picVehicle3Row2.BackColor = System.Drawing.Color.Transparent;
+            this.picVehicle3Row2.Image = global::Frogger.Properties.Resources.ce5195c342b2577e62fa90aea2e6a33b_removebg_preview1;
+            this.picVehicle3Row2.Location = new System.Drawing.Point(354, 491);
+            this.picVehicle3Row2.Name = "picVehicle3Row2";
+            this.picVehicle3Row2.Size = new System.Drawing.Size(53, 34);
+            this.picVehicle3Row2.TabIndex = 12;
+            this.picVehicle3Row2.TabStop = false;
+            // 
+            // picVehicle4Row2
+            // 
+            this.picVehicle4Row2.BackColor = System.Drawing.Color.Transparent;
+            this.picVehicle4Row2.Image = global::Frogger.Properties.Resources.ce5195c342b2577e62fa90aea2e6a33b_removebg_preview1;
+            this.picVehicle4Row2.Location = new System.Drawing.Point(535, 491);
+            this.picVehicle4Row2.Name = "picVehicle4Row2";
+            this.picVehicle4Row2.Size = new System.Drawing.Size(53, 34);
+            this.picVehicle4Row2.TabIndex = 13;
+            this.picVehicle4Row2.TabStop = false;
+            // 
+            // picVehicle4Row3
+            // 
+            this.picVehicle4Row3.BackColor = System.Drawing.Color.Transparent;
+            this.picVehicle4Row3.Image = global::Frogger.Properties.Resources.images_removebg_preview1;
+            this.picVehicle4Row3.Location = new System.Drawing.Point(12, 442);
+            this.picVehicle4Row3.Name = "picVehicle4Row3";
+            this.picVehicle4Row3.Size = new System.Drawing.Size(53, 45);
+            this.picVehicle4Row3.TabIndex = 14;
+            this.picVehicle4Row3.TabStop = false;
+            // 
+            // picVehicle3Row3
+            // 
+            this.picVehicle3Row3.BackColor = System.Drawing.Color.Transparent;
+            this.picVehicle3Row3.Image = global::Frogger.Properties.Resources.images_removebg_preview1;
+            this.picVehicle3Row3.Location = new System.Drawing.Point(174, 444);
+            this.picVehicle3Row3.Name = "picVehicle3Row3";
+            this.picVehicle3Row3.Size = new System.Drawing.Size(53, 45);
+            this.picVehicle3Row3.TabIndex = 15;
+            this.picVehicle3Row3.TabStop = false;
+            // 
+            // picVehicle2Row3
+            // 
+            this.picVehicle2Row3.BackColor = System.Drawing.Color.Transparent;
+            this.picVehicle2Row3.Image = global::Frogger.Properties.Resources.images_removebg_preview1;
+            this.picVehicle2Row3.Location = new System.Drawing.Point(354, 440);
+            this.picVehicle2Row3.Name = "picVehicle2Row3";
+            this.picVehicle2Row3.Size = new System.Drawing.Size(53, 45);
+            this.picVehicle2Row3.TabIndex = 16;
+            this.picVehicle2Row3.TabStop = false;
+            // 
+            // picVehicle2Row4
+            // 
+            this.picVehicle2Row4.BackColor = System.Drawing.Color.Transparent;
+            this.picVehicle2Row4.Image = global::Frogger.Properties.Resources.Screenshot_2026_11_26_140517_removebg_preview;
+            this.picVehicle2Row4.InitialImage = ((System.Drawing.Image)(resources.GetObject("picVehicle2Row4.InitialImage")));
+            this.picVehicle2Row4.Location = new System.Drawing.Point(174, 392);
+            this.picVehicle2Row4.Name = "picVehicle2Row4";
+            this.picVehicle2Row4.Size = new System.Drawing.Size(52, 44);
+            this.picVehicle2Row4.TabIndex = 17;
+            this.picVehicle2Row4.TabStop = false;
+            // 
+            // picVehicle3Row4
+            // 
+            this.picVehicle3Row4.BackColor = System.Drawing.Color.Transparent;
+            this.picVehicle3Row4.Image = global::Frogger.Properties.Resources.Screenshot_2026_11_26_140517_removebg_preview;
+            this.picVehicle3Row4.InitialImage = ((System.Drawing.Image)(resources.GetObject("picVehicle3Row4.InitialImage")));
+            this.picVehicle3Row4.Location = new System.Drawing.Point(354, 390);
+            this.picVehicle3Row4.Name = "picVehicle3Row4";
+            this.picVehicle3Row4.Size = new System.Drawing.Size(52, 44);
+            this.picVehicle3Row4.TabIndex = 18;
+            this.picVehicle3Row4.TabStop = false;
+            // 
+            // picVehicle4Row4
+            // 
+            this.picVehicle4Row4.BackColor = System.Drawing.Color.Transparent;
+            this.picVehicle4Row4.Image = global::Frogger.Properties.Resources.Screenshot_2026_11_26_140517_removebg_preview;
+            this.picVehicle4Row4.InitialImage = ((System.Drawing.Image)(resources.GetObject("picVehicle4Row4.InitialImage")));
+            this.picVehicle4Row4.Location = new System.Drawing.Point(535, 392);
+            this.picVehicle4Row4.Name = "picVehicle4Row4";
+            this.picVehicle4Row4.Size = new System.Drawing.Size(52, 44);
+            this.picVehicle4Row4.TabIndex = 19;
+            this.picVehicle4Row4.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Frogger.Properties.Resources.New_Project__1_2;
             this.ClientSize = new System.Drawing.Size(600, 761);
+            this.Controls.Add(this.picVehicle4Row4);
+            this.Controls.Add(this.picVehicle3Row4);
+            this.Controls.Add(this.picVehicle2Row4);
+            this.Controls.Add(this.picVehicle2Row3);
+            this.Controls.Add(this.picVehicle3Row3);
+            this.Controls.Add(this.picVehicle4Row3);
+            this.Controls.Add(this.picVehicle4Row2);
+            this.Controls.Add(this.picVehicle3Row2);
+            this.Controls.Add(this.picVehicle2Row2);
+            this.Controls.Add(this.picVehicle1Row4);
             this.Controls.Add(this.picVehicle2Row1);
             this.Controls.Add(this.picVehicle3Row1);
             this.Controls.Add(this.picVehicle4Row1);
             this.Controls.Add(this.labLives);
-            this.Controls.Add(this.picVehicle3);
-            this.Controls.Add(this.picVehicle2);
+            this.Controls.Add(this.picVehicle1Row3);
+            this.Controls.Add(this.picVehicle1Row2);
             this.Controls.Add(this.picVehicle1Row1);
             this.Controls.Add(this.picFrog);
             this.Controls.Add(this.score_label);
@@ -163,11 +298,21 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.onKeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.picFrog)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle1Row1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picVehicle2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picVehicle3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle1Row2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle1Row3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle4Row1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle3Row1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle2Row1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle1Row4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle2Row2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle3Row2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle4Row2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle4Row3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle3Row3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle2Row3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle2Row4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle3Row4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle4Row4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,12 +322,22 @@
         private System.Windows.Forms.Label score_label;
         private System.Windows.Forms.PictureBox picFrog;
         public System.Windows.Forms.PictureBox picVehicle1Row1;
-        public System.Windows.Forms.PictureBox picVehicle2;
-        public System.Windows.Forms.PictureBox picVehicle3;
+        public System.Windows.Forms.PictureBox picVehicle1Row2;
+        public System.Windows.Forms.PictureBox picVehicle1Row3;
         private System.Windows.Forms.Label labLives;
         public System.Windows.Forms.PictureBox picVehicle4Row1;
         public System.Windows.Forms.PictureBox picVehicle3Row1;
         public System.Windows.Forms.PictureBox picVehicle2Row1;
+        private System.Windows.Forms.PictureBox picVehicle1Row4;
+        public System.Windows.Forms.PictureBox picVehicle2Row2;
+        public System.Windows.Forms.PictureBox picVehicle3Row2;
+        public System.Windows.Forms.PictureBox picVehicle4Row2;
+        public System.Windows.Forms.PictureBox picVehicle4Row3;
+        public System.Windows.Forms.PictureBox picVehicle3Row3;
+        public System.Windows.Forms.PictureBox picVehicle2Row3;
+        private System.Windows.Forms.PictureBox picVehicle2Row4;
+        private System.Windows.Forms.PictureBox picVehicle3Row4;
+        private System.Windows.Forms.PictureBox picVehicle4Row4;
     }
 }
 
