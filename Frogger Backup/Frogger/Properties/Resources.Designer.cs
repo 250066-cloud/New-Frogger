@@ -203,6 +203,16 @@ namespace Frogger.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap New_Project__3__removebg_preview12 {
+            get {
+                object obj = ResourceManager.GetObject("New_Project__3_-removebg-preview12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2026_11_26_140517_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_2026-11-26_140517-removebg-preview", resourceCulture);

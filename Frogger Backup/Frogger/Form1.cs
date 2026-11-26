@@ -71,6 +71,15 @@ namespace Frogger
         public Form1()
         {
             InitializeComponent();
+
+            //hide lives cover up
+
+            picLife1.Hide();
+            picLife2.Hide();
+            picLife3.Hide();
+
+            //game tick controlling looping events
+
             t.Tick += (s, e) =>
             {
                 moveCar();
@@ -78,7 +87,11 @@ namespace Frogger
                 Thread.Sleep(1);
             };
             t.Start();
+
             
+
+
+
         }
 
         private void moveCar()
@@ -316,7 +329,6 @@ namespace Frogger
 
         void gameover()
         {
-            labLives.Text = "GAMEOVER";
             next = "MainMenu";
             Close();
         }
@@ -330,12 +342,11 @@ namespace Frogger
         {
             if (lives>1)
             {
-
+                
                 //reset player's position
                 lives -= 1;
-                labLives.Text = "LIVES "+ lives;
-                picFrog.Left = 267;
-                picFrog.Top = 603;
+                picFrog.Left = 309;
+                picFrog.Top = 581;
                 playerPosX = 0;
                 playerPosY= 0;
                 setAimTarget(0);
@@ -393,13 +404,25 @@ namespace Frogger
                 vehicle4Row4PosX = 0;
 
                 Console.Beep();
+
+                if (lives == 2)
+                {
+                    picLife3.Visible = true;
+                }
+                else if (lives == 1)
+                {
+                    picLife2.Visible = true;
+                    picLife3.Visible = true;
+                }
             }
+
             else
             {
-                for (int i = 0; i < 3; i++)
-                {
-                    Console.Beep();
-                }
+                Console.Beep();
+                picLife1.Visible = true;
+                picLife2.Visible = true;
+                picLife3.Visible = true;
+
                 picFrog.Left = 267;
                 picFrog.Top = 603;
                 playerPosX = 0;
@@ -491,9 +514,6 @@ namespace Frogger
                 updateLives();
             }
 
-
-
-
         }
         void setScore()
         {
@@ -507,7 +527,7 @@ namespace Frogger
         void setAimTarget(int direction)
         {
 
-            Image img = new Bitmap(Properties.Resources.New_Project__3__removebg_preview1);
+            Image img = new Bitmap(Properties.Resources.New_Project__3__removebg_preview12);
             switch (direction)
             {
                 case 0:
@@ -536,13 +556,13 @@ namespace Frogger
 
                 //move up
                 case Keys.W:
-                    picFrog.Top -= picFrog.Width; 
+                    picFrog.Top -= 50; 
                     playerPosY += 1;
                     setAimTarget(0);
                     break;
 
                 case Keys.Up:
-                    picFrog.Top -= picFrog.Width;
+                    picFrog.Top -= 50;
                     playerPosY += 1;
                     setAimTarget(0);
                     break;
@@ -550,7 +570,7 @@ namespace Frogger
                 //move down
                 case Keys.S:
                     if (playerPosY >0){
-                        picFrog.Top += picFrog.Width;
+                        picFrog.Top += 50;
                         playerPosY -= 1;
                         hasAdvanced = false;
                         setAimTarget(180);
@@ -560,7 +580,7 @@ namespace Frogger
                 case Keys.Down:
                     if (playerPosY > 0)
                     {
-                        picFrog.Top += picFrog.Width;
+                        picFrog.Top += 50;
                         playerPosY -= 1;
                         hasAdvanced = false;
                         setAimTarget(180);
@@ -569,7 +589,7 @@ namespace Frogger
 
                 //move right
                 case Keys.D:
-                    if (playerPosX <6)
+                    if (playerPosX <9)
                     {
                         picFrog.Left += picFrog.Width;
                         playerPosX += 1;
@@ -579,7 +599,7 @@ namespace Frogger
 
 
                 case Keys.Right:
-                    if (playerPosX < 6)
+                    if (playerPosX < 9)
                     {
                         picFrog.Left += picFrog.Width;
                         playerPosX += 1;
@@ -589,7 +609,7 @@ namespace Frogger
 
                 //move left
                 case Keys.A:
-                    if (playerPosX > -5)
+                    if (playerPosX > -10)
                     {
                         picFrog.Left -= picFrog.Width;
                         playerPosX -= 1;
@@ -598,7 +618,7 @@ namespace Frogger
                     break;
 
                 case Keys.Left:
-                    if (playerPosX > -5)
+                    if (playerPosX > -10)
                     {
                         picFrog.Left -= picFrog.Width;
                         playerPosX -= 1;
@@ -627,6 +647,11 @@ namespace Frogger
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picFrog_Click(object sender, EventArgs e)
         {
 
         }
