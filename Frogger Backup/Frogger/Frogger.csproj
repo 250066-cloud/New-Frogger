@@ -186,5 +186,14 @@
   <ItemGroup>
     <None Include="Resources\New_Project__3_-removebg-preview12.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-11-26 194725.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2026-11-26_194955-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New_Project__3_-removebg-preview13.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
