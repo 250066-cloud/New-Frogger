@@ -26,6 +26,9 @@ namespace Frogger
         int maxXRowReached = 0;
         bool hasAdvanced = false;
         int lives = 3;
+
+        //vehicles
+
         //ROW 1
         //vehicle 1
         int vehicle1Row1PosX = 0;
@@ -74,6 +77,33 @@ namespace Frogger
         int vehicle3Row5PosX = 0;
         //vehicle 4
         int vehicle4Row5PosX = 0;
+
+        //Turtles
+
+        //ROW1
+        //turtle 1
+        int turtle1Row1PosX = 0;
+        //turtle 2
+        int turtle2Row1PosX = 0;
+        //turtle 3
+        int turtle3Row1PosX = 0;
+        //turtle 4
+        int turtle4Row1PosX = 0;
+        //turtle 5
+        int turtle5Row1PosX = 0;
+        //turtle 6
+        int turtle6Row1PosX = 0;
+        //turtle 7
+        int turtle7Row1PosX = 0;
+        //turtle 8
+        int turtle8Row1PosX = 0;
+        //turtle 9
+        int turtle9Row1PosX = 0;
+
+        //Logs
+        //Log 1
+        int log1Row1PosX = 0;
+
         System.Windows.Forms.Timer t = new System.Windows.Forms.Timer();
 
 
@@ -93,15 +123,12 @@ namespace Frogger
             t.Tick += (s, e) =>
             {
                 moveCar();
+                moveTurtle();
+                moveLog();
                 isTouching();
                 Thread.Sleep(1);
             };
             t.Start();
-
-            
-
-
-
         }
 
         private void moveCar()
@@ -114,7 +141,7 @@ namespace Frogger
             {
                 picVehicle1Row1.Left -= 5;
                 vehicle1Row1PosX -= 1;
-                Console.WriteLine("Vehicle1 X Pos: " + vehicle1Row1PosX);
+                
             }
              if (vehicle1Row1PosX <= -120)
             {
@@ -127,7 +154,6 @@ namespace Frogger
             {
                 picVehicle2Row1.Left -= 5;
                 vehicle2Row1PosX -= 1;
-                Console.WriteLine("Vehicle2 X Pos: " + vehicle2Row1PosX);
             }
             if (vehicle2Row1PosX <= -120)
             {
@@ -141,7 +167,6 @@ namespace Frogger
             {
                 picVehicle3Row1.Left -= 5;
                 vehicle3Row1PosX -= 1;
-                Console.WriteLine("Vehicle3 X Pos: " + vehicle3Row1PosX);
             }
             if (vehicle3Row1PosX <= -120)
             {
@@ -155,7 +180,6 @@ namespace Frogger
             {
                 picVehicle4Row1.Left -= 5;
                 vehicle4Row1PosX -= 1;
-                Console.WriteLine("Vehicle3 X Pos: " + vehicle4Row1PosX);
             }
             if (vehicle4Row1PosX <= -120)
             {
@@ -229,7 +253,7 @@ namespace Frogger
             {
                 picVehicle1Row3.Left -= 5;
                 vehicle1Row3PosX -= 1;
-                Console.WriteLine("Vehicle1 X Pos: " + vehicle1Row1PosX);
+                
             }
             if (vehicle1Row3PosX <= -120)
             {
@@ -242,7 +266,6 @@ namespace Frogger
             {
                 picVehicle2Row3.Left -= 5;
                 vehicle2Row3PosX -= 1;
-                Console.WriteLine("Vehicle2 X Pos: " + vehicle2Row1PosX);
             }
             if (vehicle2Row3PosX <= -120)
             {
@@ -255,8 +278,7 @@ namespace Frogger
             //if (vehicle3Row1PosX >= -120)
             {
                 picVehicle3Row3.Left -= 5;
-                vehicle3Row3PosX -= 1;
-                Console.WriteLine("Vehicle3 X Pos: " + vehicle3Row1PosX);
+                vehicle3Row3PosX -= 1;;
             }
             if (vehicle3Row3PosX <= -120)
             {
@@ -270,7 +292,6 @@ namespace Frogger
             {
                 picVehicle4Row3.Left -= 5;
                 vehicle4Row3PosX -= 1;
-                Console.WriteLine("Vehicle3 X Pos: " + vehicle4Row1PosX);
             }
             if (vehicle4Row3PosX <= -120)
             {
@@ -343,7 +364,7 @@ namespace Frogger
             {
                 picVehicle1Row5.Left -= 5;
                 vehicle1Row5PosX -= 1;
-                Console.WriteLine("Vehicle1 X Pos: " + vehicle1Row1PosX);
+                
             }
             if (vehicle1Row5PosX <= -120)
             {
@@ -356,7 +377,6 @@ namespace Frogger
             {
                 picVehicle2Row5.Left -= 5;
                 vehicle2Row5PosX -= 1;
-                Console.WriteLine("Vehicle2 X Pos: " + vehicle2Row1PosX);
             }
             if (vehicle2Row5PosX <= -120)
             {
@@ -370,7 +390,6 @@ namespace Frogger
             {
                 picVehicle3Row5.Left -= 5;
                 vehicle3Row5PosX -= 1;
-                Console.WriteLine("Vehicle3 X Pos: " + vehicle3Row1PosX);
             }
             if (vehicle3Row5PosX <= -120)
             {
@@ -384,12 +403,240 @@ namespace Frogger
             {
                 picVehicle4Row5.Left -= 5;
                 vehicle4Row5PosX -= 1;
-                Console.WriteLine("Vehicle3 X Pos: " + vehicle4Row1PosX);
             }
             if (vehicle4Row5PosX <= -120)
             {
                 picVehicle4Row5.Left = 600;
                 vehicle4Row5PosX = 120;
+            }
+        }
+
+        private void moveTurtle()
+        {
+            //ROW 1
+            //Turle 1
+
+            //if (turtle1Row1PosX >= -120)
+            {
+                picTurtle1Row1.Left -= 10;
+                turtle1Row1PosX -= 2;
+            }
+            if (turtle1Row1PosX <= -120)
+            {
+                picTurtle1Row1.Left = 1136;
+                turtle1Row1PosX = 120;
+            }
+
+            //Turle 2
+
+            //if (turtle2Row1PosX >= -120)
+            {
+                picTurtle2Row1.Left -= 10;
+                turtle2Row1PosX -= 2;
+            }
+            if (turtle2Row1PosX <= -120)
+            {
+                picTurtle2Row1.Left = 1086;
+                turtle2Row1PosX = 120;
+            }
+
+            //Turle 3
+
+            //if (turtle3Row1PosX >= -120)
+            {
+                picTurtle3Row1.Left -= 10;
+                turtle3Row1PosX -= 2;
+            }
+            if (turtle3Row1PosX <= -120)
+            {
+                picTurtle3Row1.Left = 1036;
+                turtle3Row1PosX = 120;
+            }
+
+            //Turle 4
+
+            //if (turtle4Row1PosX >= -120)
+            {
+                picTurtle4Row1Water.Left -= 10;
+                turtle4Row1PosX -= 2;
+
+                //go underwater
+                if (turtle4Row1PosX == -10 || turtle4Row1PosX == 50)
+                {
+                    Image img = new Bitmap(Properties.Resources.Screenshot_2026_11_27_223232_removebg_preview__1__removebg_preview);
+                    picTurtle4Row1Water.Image = img;
+                }
+                if (turtle4Row1PosX == -14 || turtle4Row1PosX == 48)
+                {
+                    Image img = new Bitmap(Properties.Resources.Screenshot_2026_11_27_225809121_removebg_preview__1__removebg_preview);
+                    picTurtle4Row1Water.Image = img;
+                }
+                if (turtle4Row1PosX == -16 || turtle4Row1PosX == 46)
+                {
+                    picTurtle4Row1Water.Visible = false;
+                }
+                if (turtle4Row1PosX == -18 || turtle4Row1PosX == 44)
+                {
+                    picTurtle4Row1Water.Visible = true;
+                }
+                if (turtle4Row1PosX == -20 || turtle4Row1PosX == 42)
+                {
+                    Image img = new Bitmap(Properties.Resources.Screenshot_2026_11_27_223232_removebg_preview__1__removebg_preview);
+                    picTurtle4Row1Water.Image = img;
+                }
+                if (turtle4Row1PosX == -22 || turtle4Row1PosX == 40)
+                {
+                    Image img = new Bitmap(Properties.Resources.Turtle___Frogger_29___10_removebg_preview);
+                    picTurtle4Row1Water.Image = img;
+                }
+            }
+            if (turtle4Row1PosX <= -120)
+            {
+                picTurtle4Row1Water.Left = 936;
+                turtle4Row1PosX = 120;
+            }
+
+            //Turle 5
+
+            //if (turtle5Row1PosX >= -120)
+            {
+                picTurtle5Row1Water.Left -= 10;
+                turtle5Row1PosX -= 2;
+                
+                //go underwater
+                if (turtle5Row1PosX == -10 || turtle5Row1PosX == 50)
+                {
+                    Image img = new Bitmap(Properties.Resources.Screenshot_2026_11_27_223232_removebg_preview__1__removebg_preview);
+                    picTurtle5Row1Water.Image = img;
+                }
+                if (turtle5Row1PosX == -14 || turtle5Row1PosX == 48)
+                {
+                    Image img = new Bitmap(Properties.Resources.Screenshot_2026_11_27_225809121_removebg_preview__1__removebg_preview);
+                    picTurtle5Row1Water.Image = img;
+                }
+                 if (turtle5Row1PosX == -16 || turtle5Row1PosX == 46)
+                {
+                    picTurtle5Row1Water.Visible = false;
+                }
+                if (turtle5Row1PosX == -18 || turtle5Row1PosX == 44)
+                {
+                    picTurtle5Row1Water.Visible = true;
+                }
+                if (turtle5Row1PosX == -20 || turtle5Row1PosX == 42)
+                {
+                    Image img = new Bitmap(Properties.Resources.Screenshot_2026_11_27_223232_removebg_preview__1__removebg_preview);
+                    picTurtle5Row1Water.Image = img;
+                }
+                if (turtle5Row1PosX == -22 || turtle5Row1PosX == 40)
+                {
+                    Image img = new Bitmap(Properties.Resources.Turtle___Frogger_29___10_removebg_preview);
+                    picTurtle5Row1Water.Image = img;
+                }
+            }
+            if (turtle5Row1PosX <= -120)
+            {
+                picTurtle5Row1Water.Left = 886;
+                turtle5Row1PosX = 120;
+            }
+
+            //Turle 6
+
+            //if (turtle6Row1PosX >= -120)
+            {
+                picTurtle6Row1Water.Left -= 10;
+                turtle6Row1PosX -= 2;
+
+                //go underwater
+                if (turtle6Row1PosX == -10 || turtle6Row1PosX == 50)
+                {
+                    Image img = new Bitmap(Properties.Resources.Screenshot_2026_11_27_223232_removebg_preview__1__removebg_preview);
+                    picTurtle6Row1Water.Image = img;
+                }
+                if (turtle6Row1PosX == -14 || turtle6Row1PosX == 48)
+                {
+                    Image img = new Bitmap(Properties.Resources.Screenshot_2026_11_27_225809121_removebg_preview__1__removebg_preview);
+                    picTurtle6Row1Water.Image = img;
+                }
+                if (turtle6Row1PosX == -16 || turtle6Row1PosX == 46)
+                {
+                    picTurtle6Row1Water.Visible = false;
+                }
+                if (turtle6Row1PosX == -18 || turtle6Row1PosX == 44)
+                {
+                    picTurtle6Row1Water.Visible = true;
+                }
+                if (turtle6Row1PosX == -20 || turtle6Row1PosX == 42)
+                {
+                    Image img = new Bitmap(Properties.Resources.Screenshot_2026_11_27_223232_removebg_preview__1__removebg_preview);
+                    picTurtle6Row1Water.Image = img;
+                }
+                if (turtle6Row1PosX == -22 || turtle6Row1PosX == 40)
+                {
+                    Image img = new Bitmap(Properties.Resources.Turtle___Frogger_29___10_removebg_preview);
+                    picTurtle6Row1Water.Image = img;
+                }
+            }
+            if (turtle6Row1PosX <= -120)
+            {
+                picTurtle6Row1Water.Left = 836;
+                turtle6Row1PosX = 120;
+            }
+
+            //Turle 7
+
+            //if (turtle7Row1PosX >= -120)
+            {
+                picTurtle7Row1.Left -= 10;
+                turtle7Row1PosX -= 2;
+            }
+            if (turtle7Row1PosX <= -120)
+            {
+                picTurtle7Row1.Left = 736;
+                turtle7Row1PosX = 120;
+            }
+
+            //Turle 8
+
+            //if (turtle8Row1PosX >= -120)
+            {
+                picTurtle8Row1.Left -= 10;
+                turtle8Row1PosX -= 2;
+            }
+            if (turtle8Row1PosX <= -120)
+            {
+                picTurtle8Row1.Left = 686;
+                turtle8Row1PosX = 120;
+            }
+
+            //Turle 9
+
+            //if (turtle8Row1PosX >= -120)
+            {
+                picTurtle9Row1.Left -= 10;
+                turtle9Row1PosX -= 2;
+            }
+            if (turtle9Row1PosX <= -120)
+            {
+                picTurtle9Row1.Left = 636;
+                turtle9Row1PosX = 120;
+            }
+        }
+
+        private void moveLog()
+        {
+            //ROW 1
+
+            //Log 1
+
+            //if (log1Row1PosX >= -120)
+            {
+                picLog1Row1.Left += 10;
+                log1Row1PosX += 2;
+            }
+            if (log1Row1PosX >= 120)
+            {
+                picLog1Row1.Left = 0;
+                log1Row1PosX = -120;
             }
         }
 

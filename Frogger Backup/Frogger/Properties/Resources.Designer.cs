@@ -253,6 +253,76 @@ namespace Frogger.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_11_27_223232_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2026-11-27_223232-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_11_27_223232_removebg_preview__1__removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2026-11-27_223232-removebg-preview__1_-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_11_27_223232_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2026-11-27_223232-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_11_27_223232_removebg_preview2 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2026-11-27_223232-removebg-preview2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_11_27_225809121_removebg_preview__1__removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2026-11-27_225809121-removebg-preview__1_-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_11_27_231657_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2026-11-27_231657-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Turtle___Frogger_29___10_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Turtle_-_Frogger_29_-_10-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap unnamed {
             get {
                 object obj = ResourceManager.GetObject("unnamed", resourceCulture);

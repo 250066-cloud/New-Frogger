@@ -54,6 +54,16 @@
             this.picVehicle4Row5 = new System.Windows.Forms.PictureBox();
             this.picVehicle3Row5 = new System.Windows.Forms.PictureBox();
             this.picVehicle2Row5 = new System.Windows.Forms.PictureBox();
+            this.picTurtle1Row1 = new System.Windows.Forms.PictureBox();
+            this.picTurtle3Row1 = new System.Windows.Forms.PictureBox();
+            this.picTurtle2Row1 = new System.Windows.Forms.PictureBox();
+            this.picTurtle5Row1Water = new System.Windows.Forms.PictureBox();
+            this.picTurtle6Row1Water = new System.Windows.Forms.PictureBox();
+            this.picTurtle4Row1Water = new System.Windows.Forms.PictureBox();
+            this.picTurtle8Row1 = new System.Windows.Forms.PictureBox();
+            this.picTurtle9Row1 = new System.Windows.Forms.PictureBox();
+            this.picTurtle7Row1 = new System.Windows.Forms.PictureBox();
+            this.picLog1Row1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picFrog)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle1Row1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle1Row2)).BeginInit();
@@ -78,6 +88,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle4Row5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle3Row5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle2Row5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle1Row1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle3Row1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle2Row1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle5Row1Water)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle6Row1Water)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle4Row1Water)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle8Row1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle9Row1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle7Row1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLog1Row1)).BeginInit();
             this.SuspendLayout();
             // 
             // score_label
@@ -336,12 +356,123 @@
             this.picVehicle2Row5.TabIndex = 26;
             this.picVehicle2Row5.TabStop = false;
             // 
+            // picTurtle1Row1
+            // 
+            this.picTurtle1Row1.BackColor = System.Drawing.Color.Transparent;
+            this.picTurtle1Row1.Image = global::Frogger.Properties.Resources.Turtle___Frogger_29___10_removebg_preview;
+            this.picTurtle1Row1.Location = new System.Drawing.Point(535, 227);
+            this.picTurtle1Row1.Name = "picTurtle1Row1";
+            this.picTurtle1Row1.Size = new System.Drawing.Size(50, 50);
+            this.picTurtle1Row1.TabIndex = 27;
+            this.picTurtle1Row1.TabStop = false;
+            // 
+            // picTurtle3Row1
+            // 
+            this.picTurtle3Row1.BackColor = System.Drawing.Color.Transparent;
+            this.picTurtle3Row1.Image = global::Frogger.Properties.Resources.Turtle___Frogger_29___10_removebg_preview;
+            this.picTurtle3Row1.Location = new System.Drawing.Point(433, 227);
+            this.picTurtle3Row1.Name = "picTurtle3Row1";
+            this.picTurtle3Row1.Size = new System.Drawing.Size(50, 50);
+            this.picTurtle3Row1.TabIndex = 28;
+            this.picTurtle3Row1.TabStop = false;
+            // 
+            // picTurtle2Row1
+            // 
+            this.picTurtle2Row1.BackColor = System.Drawing.Color.Transparent;
+            this.picTurtle2Row1.Image = global::Frogger.Properties.Resources.Turtle___Frogger_29___10_removebg_preview;
+            this.picTurtle2Row1.Location = new System.Drawing.Point(484, 227);
+            this.picTurtle2Row1.Name = "picTurtle2Row1";
+            this.picTurtle2Row1.Size = new System.Drawing.Size(50, 50);
+            this.picTurtle2Row1.TabIndex = 29;
+            this.picTurtle2Row1.TabStop = false;
+            // 
+            // picTurtle5Row1Water
+            // 
+            this.picTurtle5Row1Water.BackColor = System.Drawing.Color.Transparent;
+            this.picTurtle5Row1Water.ErrorImage = global::Frogger.Properties.Resources.Screenshot_2026_11_27_225809121_removebg_preview__1__removebg_preview;
+            this.picTurtle5Row1Water.Image = global::Frogger.Properties.Resources.Turtle___Frogger_29___10_removebg_preview;
+            this.picTurtle5Row1Water.Location = new System.Drawing.Point(284, 227);
+            this.picTurtle5Row1Water.Name = "picTurtle5Row1Water";
+            this.picTurtle5Row1Water.Size = new System.Drawing.Size(50, 50);
+            this.picTurtle5Row1Water.TabIndex = 32;
+            this.picTurtle5Row1Water.TabStop = false;
+            // 
+            // picTurtle6Row1Water
+            // 
+            this.picTurtle6Row1Water.BackColor = System.Drawing.Color.Transparent;
+            this.picTurtle6Row1Water.Image = global::Frogger.Properties.Resources.Turtle___Frogger_29___10_removebg_preview;
+            this.picTurtle6Row1Water.Location = new System.Drawing.Point(233, 227);
+            this.picTurtle6Row1Water.Name = "picTurtle6Row1Water";
+            this.picTurtle6Row1Water.Size = new System.Drawing.Size(50, 50);
+            this.picTurtle6Row1Water.TabIndex = 31;
+            this.picTurtle6Row1Water.TabStop = false;
+            // 
+            // picTurtle4Row1Water
+            // 
+            this.picTurtle4Row1Water.BackColor = System.Drawing.Color.Transparent;
+            this.picTurtle4Row1Water.Image = global::Frogger.Properties.Resources.Turtle___Frogger_29___10_removebg_preview;
+            this.picTurtle4Row1Water.Location = new System.Drawing.Point(335, 227);
+            this.picTurtle4Row1Water.Name = "picTurtle4Row1Water";
+            this.picTurtle4Row1Water.Size = new System.Drawing.Size(50, 50);
+            this.picTurtle4Row1Water.TabIndex = 30;
+            this.picTurtle4Row1Water.TabStop = false;
+            // 
+            // picTurtle8Row1
+            // 
+            this.picTurtle8Row1.BackColor = System.Drawing.Color.Transparent;
+            this.picTurtle8Row1.Image = global::Frogger.Properties.Resources.Turtle___Frogger_29___10_removebg_preview;
+            this.picTurtle8Row1.Location = new System.Drawing.Point(83, 227);
+            this.picTurtle8Row1.Name = "picTurtle8Row1";
+            this.picTurtle8Row1.Size = new System.Drawing.Size(50, 50);
+            this.picTurtle8Row1.TabIndex = 35;
+            this.picTurtle8Row1.TabStop = false;
+            // 
+            // picTurtle9Row1
+            // 
+            this.picTurtle9Row1.BackColor = System.Drawing.Color.Transparent;
+            this.picTurtle9Row1.Image = global::Frogger.Properties.Resources.Turtle___Frogger_29___10_removebg_preview;
+            this.picTurtle9Row1.Location = new System.Drawing.Point(32, 227);
+            this.picTurtle9Row1.Name = "picTurtle9Row1";
+            this.picTurtle9Row1.Size = new System.Drawing.Size(50, 50);
+            this.picTurtle9Row1.TabIndex = 34;
+            this.picTurtle9Row1.TabStop = false;
+            // 
+            // picTurtle7Row1
+            // 
+            this.picTurtle7Row1.BackColor = System.Drawing.Color.Transparent;
+            this.picTurtle7Row1.Image = global::Frogger.Properties.Resources.Turtle___Frogger_29___10_removebg_preview;
+            this.picTurtle7Row1.Location = new System.Drawing.Point(134, 227);
+            this.picTurtle7Row1.Name = "picTurtle7Row1";
+            this.picTurtle7Row1.Size = new System.Drawing.Size(50, 50);
+            this.picTurtle7Row1.TabIndex = 33;
+            this.picTurtle7Row1.TabStop = false;
+            // 
+            // picLog1Row1
+            // 
+            this.picLog1Row1.BackColor = System.Drawing.Color.Transparent;
+            this.picLog1Row1.Image = global::Frogger.Properties.Resources.Screenshot_2026_11_27_231657_removebg_preview;
+            this.picLog1Row1.Location = new System.Drawing.Point(12, 169);
+            this.picLog1Row1.Name = "picLog1Row1";
+            this.picLog1Row1.Size = new System.Drawing.Size(130, 32);
+            this.picLog1Row1.TabIndex = 36;
+            this.picLog1Row1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Frogger.Properties.Resources.New_Project__1_2;
             this.ClientSize = new System.Drawing.Size(600, 761);
+            this.Controls.Add(this.picLog1Row1);
+            this.Controls.Add(this.picTurtle8Row1);
+            this.Controls.Add(this.picTurtle9Row1);
+            this.Controls.Add(this.picTurtle7Row1);
+            this.Controls.Add(this.picTurtle5Row1Water);
+            this.Controls.Add(this.picTurtle6Row1Water);
+            this.Controls.Add(this.picTurtle4Row1Water);
+            this.Controls.Add(this.picTurtle2Row1);
+            this.Controls.Add(this.picTurtle3Row1);
+            this.Controls.Add(this.picTurtle1Row1);
             this.Controls.Add(this.picVehicle2Row5);
             this.Controls.Add(this.picVehicle3Row5);
             this.Controls.Add(this.picVehicle4Row5);
@@ -396,6 +527,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle4Row5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle3Row5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVehicle2Row5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle1Row1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle3Row1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle2Row1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle5Row1Water)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle6Row1Water)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle4Row1Water)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle8Row1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle9Row1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTurtle7Row1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLog1Row1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -427,6 +568,16 @@
         private System.Windows.Forms.PictureBox picVehicle4Row5;
         private System.Windows.Forms.PictureBox picVehicle3Row5;
         private System.Windows.Forms.PictureBox picVehicle2Row5;
+        private System.Windows.Forms.PictureBox picTurtle1Row1;
+        private System.Windows.Forms.PictureBox picTurtle3Row1;
+        private System.Windows.Forms.PictureBox picTurtle2Row1;
+        private System.Windows.Forms.PictureBox picTurtle5Row1Water;
+        private System.Windows.Forms.PictureBox picTurtle6Row1Water;
+        private System.Windows.Forms.PictureBox picTurtle4Row1Water;
+        private System.Windows.Forms.PictureBox picTurtle8Row1;
+        private System.Windows.Forms.PictureBox picTurtle9Row1;
+        private System.Windows.Forms.PictureBox picTurtle7Row1;
+        private System.Windows.Forms.PictureBox picLog1Row1;
     }
 }
 
