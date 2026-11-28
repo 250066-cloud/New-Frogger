@@ -101,8 +101,21 @@ namespace Frogger
         int turtle9Row1PosX = 0;
 
         //Logs
+        //Row 1
+
         //Log 1
         int log1Row1PosX = 0;
+        //Log 2
+        int log2Row1PosX = 0;
+        //Log 3
+        int log3Row1PosX = 0;
+
+        //Row 2
+        //Log 1
+        int log1Row2PosX = 0;
+        //Log 2
+        int log2Row2PosX = 0;
+        
 
         System.Windows.Forms.Timer t = new System.Windows.Forms.Timer();
 
@@ -620,6 +633,8 @@ namespace Frogger
                 picTurtle9Row1.Left = 636;
                 turtle9Row1PosX = 120;
             }
+
+            //ROW 2
         }
 
         private void moveLog()
@@ -635,9 +650,62 @@ namespace Frogger
             }
             if (log1Row1PosX >= 120)
             {
-                picLog1Row1.Left = 0;
-                log1Row1PosX = -120;
+                picLog1Row1.Left = -401;
+                log1Row1PosX = 0;
             }
+
+            //Log 2
+
+            //if (log1Row1PosX >= -120)
+            {
+                picLog2Row1.Left += 10;
+                log2Row1PosX += 2;
+            }
+            if (log2Row1PosX >= 120)
+            {
+                picLog2Row1.Left = -201;
+                log2Row1PosX = 0;
+            }
+
+            //Log 3
+
+            //if (log3Row1PosX >= -120)
+            {
+                picLog3Row1.Left += 10;
+                log3Row1PosX += 2;
+            }
+            if (log3Row1PosX >= 120)
+            {
+                picLog3Row1.Left = -0;
+                log3Row1PosX = 0;
+            }
+
+            //ROW 2
+
+            //Log 1
+            //if (log1Row2PosX >= -120)
+            {
+                picLog1Row2.Left += 10;
+                log1Row2PosX += 2;
+            }
+            if (log1Row2PosX >= 120)
+            {
+                picLog1Row2.Left = -401;
+                log1Row2PosX = 0;
+            }
+
+            //Log 2
+            //if (log2Row2PosX >= -120)
+            {
+                picLog2Row2.Left += 10;
+                log2Row2PosX += 2;
+            }
+            if (log2Row2PosX >= 120)
+            {
+                picLog2Row2.Left = 0;
+                log2Row2PosX = 0;
+            }
+
         }
 
         void gameover()
@@ -978,6 +1046,16 @@ namespace Frogger
         }
 
         private void picFrog_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picLog1Row2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picLog2Row2_Click(object sender, EventArgs e)
         {
 
         }
